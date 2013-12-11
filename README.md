@@ -14,5 +14,5 @@ Example usage:
 
 $year = file_get_contents('https://raw.github.com/asgrim/year/master/currentYear');
 
-echo $year; // 2013
+echo $year; // 2014
 ```
