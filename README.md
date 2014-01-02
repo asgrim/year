@@ -14,7 +14,8 @@ Year as a Service. Provides the current year as a service.
 ```php
 <?php
 $year = file_get_contents('https://raw.github.com/asgrim/year/master/en/currentYear');
-echo $year; // 2013
+
+echo $year; // 2014
 ```
 
 ### Ruby
@@ -22,7 +23,7 @@ echo $year; // 2013
 ```ruby
 require 'net/http'
 year = Net::HTTP.get_response(URI.parse("https://raw.github.com/asgrim/year/master/en/currentYear")).body
-p year # 2013
+p year # 2014
 ```
 
 ### Python
@@ -30,7 +31,7 @@ p year # 2013
 ```python
 import urllib2
 year = urllib2.urlopen('https://raw.github.com/asgrim/year/master/en/currentYear').read(1000).strip()
-print year; # 2013
+print year; # 2014
 ```
 
 ## BC Break
