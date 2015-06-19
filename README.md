@@ -53,4 +53,3 @@ Chinese (zh-cn):
 * **Current year:** https://raw.github.com/asgrim/year/master/zh-cn/currentYear
 * **Next year:** https://raw.github.com/asgrim/year/master/zh-cn/nextYear
 * **Previous year:** https://raw.github.com/asgrim/year/master/zh-cn/previousYear
-
