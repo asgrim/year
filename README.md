@@ -9,6 +9,8 @@ Year as a Service. Provides the current year as a service.
 
 ## Examples
 
+Note that these examples may not take into account good security practices, for example escaping output to prevent XSS vulnerabilities.
+
 ### PHP
 
 ```php
@@ -54,3 +56,10 @@ Chinese (zh-cn):
 * **Next year:** https://raw.github.com/asgrim/year/master/zh-cn/nextYear
 * **Previous year:** https://raw.github.com/asgrim/year/master/zh-cn/previousYear
 
+## FAQs
+
+**Should I use this in my real application?**
+* No.
+
+**r u troleing me?**
+* Yes.
