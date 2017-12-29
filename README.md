@@ -17,7 +17,7 @@ Note that these examples may not take into account good security practices, for 
 <?php
 $year = file_get_contents('https://raw.github.com/asgrim/year/master/en/currentYear');
 
-echo $year; // 2017
+echo $year; // 2018
 ```
 
 ### Ruby
@@ -25,7 +25,7 @@ echo $year; // 2017
 ```ruby
 require 'net/http'
 year = Net::HTTP.get_response(URI.parse("https://raw.github.com/asgrim/year/master/en/currentYear")).body
-p year # 2017
+p year # 2018
 ```
 
 ### Python
@@ -33,7 +33,7 @@ p year # 2017
 ```python
 import urllib2
 year = urllib2.urlopen('https://raw.github.com/asgrim/year/master/en/currentYear').read(1000).strip()
-print year; # 2017
+print year; # 2018
 ```
 
 ## BC Break
