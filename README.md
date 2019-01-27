@@ -36,6 +36,25 @@ year = urllib2.urlopen('https://raw.github.com/asgrim/year/master/en/currentYear
 print year; # 2019
 ```
 
+### JavaScript
+
+```javascript
+// Fetch
+fetch('https://raw.githubusercontent.com/asgrim/year/master/en/currentYear')
+    .then(resp => resp.json())
+    .then(year => console.log(year)) // 2019
+
+// XMLHttpRequest
+let xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://raw.githubusercontent.com/asgrim/year/master/en/currentYear', true);
+xhr.onload = () => {
+    if (xhr.status >= 200 && xhr.status < 300 || xhr.status === 304) {
+        console.log(xhr.responseText)
+    }
+};
+xhr.send(); // 2019
+```
+
 ## BC Break
 
 In the future, we may have to break BC by removing the root "[currentYear](https://raw.github.com/asgrim/year/master/currentYear)". You should use "[en/currentYear](https://raw.github.com/asgrim/year/master/en/currentYear)" instead.
