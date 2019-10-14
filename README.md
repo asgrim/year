@@ -35,7 +35,6 @@ import urllib2
 year = urllib2.urlopen('https://raw.github.com/asgrim/year/master/en/currentYear').read(1000).strip()
 print year; # 2019
 ```
-
 ### JavaScript
 
 ```javascript
@@ -54,7 +53,15 @@ xhr.onload = () => {
 };
 xhr.send(); // 2019
 ```
+### Bash
 
+```Bash
+#!/bin/bash
+## Fetch
+page="$(curl -s https://raw.githubusercontent.com/asgrim/year/master/en/currentYear)"
+echo "$page" # 2019
+
+```
 ## BC Break
 
 In the future, we may have to break BC by removing the root "[currentYear](https://raw.github.com/asgrim/year/master/currentYear)". You should use "[en/currentYear](https://raw.github.com/asgrim/year/master/en/currentYear)" instead.
