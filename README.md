@@ -17,7 +17,7 @@ Note that these examples may not take into account good security practices, for 
 <?php
 $year = file_get_contents('https://raw.github.com/asgrim/year/master/en/currentYear');
 
-echo $year; // 2019
+echo $year; // 2020
 ```
 
 ### Ruby
@@ -25,7 +25,7 @@ echo $year; // 2019
 ```ruby
 require 'net/http'
 year = Net::HTTP.get_response(URI.parse("https://raw.github.com/asgrim/year/master/en/currentYear")).body
-p year # 2019
+p year # 2020
 ```
 
 ### Python
@@ -33,7 +33,7 @@ p year # 2019
 ```python
 import urllib2
 year = urllib2.urlopen('https://raw.github.com/asgrim/year/master/en/currentYear').read(1000).strip()
-print year; # 2019
+print year; # 2020
 ```
 ### JavaScript
 
@@ -41,7 +41,7 @@ print year; # 2019
 // Fetch
 fetch('https://raw.githubusercontent.com/asgrim/year/master/en/currentYear')
     .then(resp => resp.json())
-    .then(year => console.log(year)) // 2019
+    .then(year => console.log(year)) // 2020
 
 // XMLHttpRequest
 let xhr = new XMLHttpRequest()
@@ -51,7 +51,7 @@ xhr.onload = () => {
         console.log(xhr.responseText)
     }
 };
-xhr.send(); // 2019
+xhr.send(); // 2020
 ```
 ### Bash
 
@@ -59,7 +59,7 @@ xhr.send(); // 2019
 #!/bin/bash
 ## Fetch
 page="$(curl -s https://raw.githubusercontent.com/asgrim/year/master/en/currentYear)"
-echo "$page" # 2019
+echo "$page" # 2020
 
 ```
 ## BC Break
