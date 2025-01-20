@@ -1,7 +1,7 @@
 YaaS
 ====
 
-Year as a Service. Provides the current year as a service.
+Year as a Service. Providing you with extremely accurate year as an API service, since 2015.
 
 * **Current year:** https://raw.github.com/asgrim/year/master/en/currentYear
 * **Next year:** https://raw.github.com/asgrim/year/master/en/nextYear
